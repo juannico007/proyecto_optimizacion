@@ -1,4 +1,5 @@
-function op = newton(f, p)
+function op = newton(f, p) %Input: Una función y un punto inicial
+                           %Outpu: el punto minimo optimo de la funcion 
     
     k = 1;
 
