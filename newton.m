@@ -1,5 +1,7 @@
 function op = newton(f, p) %Input: Una función y un punto inicial
-                           %Outpu: el punto minimo optimo de la funcion 
+                           %Outpu: el punto minimo optimo de la funcion
+                           
+                           %Se utilizo como base codigo del metodo de Newton echo junto al profesor en el horario de clase
     
     k = 1;
 
