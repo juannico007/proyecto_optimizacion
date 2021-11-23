@@ -1,8 +1,20 @@
 function v = seccionaurea(a, b, la, u, p, i, f)
-%     disp([i, a, b, la, u, f(la), f(u)])
-%     disp('-----------------------------------------------')
+    %Función de seccion aurea para realizar una búsqueda de linea
+    %INPUT:
+    %a: limite inferior del intervalo
+    %b: limite superior del intervalo
+    %la: lambda calculado en el intervalo
+    %u: mu calculado en el intervalo
+    %p: constante phi
+    %i: número de la iteración
+    %g: función a minimizar
+    %OUTPUT:
+    %Punto mínimo de la función en el intervalo
+    
+    %Si el intervalo es lo suficietemente pequeño
     if b - a <= 0.01
         v = la;
+    %Sino actualiza
     else
         if f(la) >= f(u)
             a = la;
